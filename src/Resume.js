@@ -121,7 +121,7 @@ export default function Resume() {
             fontSize: "28px", fontWeight: "700", color: "#fff",
             boxShadow: "0 0 0 4px rgba(99,102,241,0.2), 0 0 30px rgba(99,102,241,0.3)"
           }}>
-            ZB
+            Wattoo
           </div>
           <h1 style={{
             fontSize: "clamp(28px, 5vw, 48px)", fontWeight: "700",
