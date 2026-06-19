@@ -55,6 +55,7 @@ function AnimatedBar({ level, color, delay }) {
 
 export default function Resume() {
   const [activeSection, setActiveSection] = useState("about");
+  const profileImageUrl = process.env.PUBLIC_URL + "/zaib%20pic.jpg";
 
   const navItems = ["about", "skills", "projects", "education", "contact"];
 
@@ -114,14 +115,19 @@ export default function Resume() {
         {/* Hero */}
         <header style={{ textAlign: "center", padding: "3rem 1.5rem 2rem" }}>
           <div style={{
-            width: "90px", height: "90px", borderRadius: "50%",
+            width: "110px", height: "110px", borderRadius: "50%",
+            overflow: "hidden",
             background: "linear-gradient(135deg, #6366f1, #06b6d4)",
             display: "flex", alignItems: "center", justifyContent: "center",
             margin: "0 auto 1.2rem",
             fontSize: "28px", fontWeight: "700", color: "#fff",
             boxShadow: "0 0 0 4px rgba(99,102,241,0.2), 0 0 30px rgba(99,102,241,0.3)"
           }}>
-            ZB
+            <img
+              src={profileImageUrl}
+              alt="Profile"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </div>
           <h1 style={{
             fontSize: "clamp(28px, 5vw, 48px)", fontWeight: "700",
